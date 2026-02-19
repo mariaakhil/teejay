@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ✅ Bootstrap 5 CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Google Fonts - Poppins Light -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+ <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/static/css/home.css">
+    <title>Teejay</title>
+</head>
+<body>
+
+  <!-- ✅ Fixed Navbar -->
+  <nav class="navbar navbar-expand-lg custom-navbar fixed-top">
+    <div class="container">
+      <!-- Logo + Brand -->
+      <a class="navbar-brand d-flex align-items-center gap-2" href="/">
+        <img src="/static/images/teejay-packaging-LLC.webp" alt="Logo" class="brand-logo">
+      </a>
+
+      <!-- Mobile toggle -->
+      <button class="navbar-toggler" type="button"
+        data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+        aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Links -->
+      <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
+        <ul class="navbar-nav align-items-lg-center gap-lg-1">
+          <li class="nav-item"><a class="nav-link active" href="/" style="color: black;">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="/about/">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="/packaging/">Packaging</a></li>
+          <li class="nav-item"><a class="nav-link" href="/blog/">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="/contact/">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ✅ HERO BACKGROUND SLIDER -->
+ <section class="hero-bg-slider">
+  <div id="heroBgCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+
+    <!-- indicators -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#heroBgCarousel" data-bs-slide-to="0" class="active" aria-current="true"></button>
+      <button type="button" data-bs-target="#heroBgCarousel" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#heroBgCarousel" data-bs-slide-to="2"></button>
+    </div>
+
+    <div class="carousel-inner">
+
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <img src="/static/images/WhatsApp Image 2026-02-19 at 1.41.46 PM.jpeg" class="d-block w-100" alt="Slide 1">
+
+        <!-- Overlay -->
+        <div class="hero-overlay"></div>
+
+        <!-- Content -->
+        <div class="hero-content">
+          <div class="container">
+            <div class="hero-box">
+              <h1 class="hero-title">Premium Packaging for Modern Brands</h1>
+              <p class="hero-desc">High quality packaging with stylish black & gold finish to elevate your product.</p>
+
+              <div class="hero-actions d-flex flex-column flex-sm-row gap-3 mt-4">
+                <a href="/packaging/" class="btn btn-gold">Explore Packaging</a>
+                <a href="/contact/" class="btn btn-outline-gold">Get a Quote</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+        <img src="/static/images/WhatsApp Image 2026-02-19 at 1.41.48 PM (1).jpeg"
+             class="d-block w-100" alt="Slide 2">
+
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+          <div class="container">
+            <div class="hero-box">
+              <h1 class="hero-title">Custom Sizes, Materials & Finishes</h1>
+              <p class="hero-desc">Choose eco-friendly materials, premium lamination, and custom branding.</p>
+
+              <div class="hero-actions d-flex flex-column flex-sm-row gap-3 mt-4">
+                <a href="/about/" class="btn btn-gold">Know More</a>
+                <a href="/contact/" class="btn btn-outline-gold">Contact Us</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="carousel-item">
+        <img src="/static/images/WhatsApp Image 2026-02-19 at 1.41.48 PM (2).jpeg"
+             class="d-block w-100" alt="Slide 3">
+
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+          <div class="container">
+            <div class="hero-box">
+              <h1 class="hero-title">Fast Delivery & Trusted Support</h1>
+              <p class="hero-desc">Reliable production and timely delivery with professional customer support.</p>
+
+              <div class="hero-actions d-flex flex-column flex-sm-row gap-3 mt-4">
+                <a href="/blog/" class="btn btn-gold">Read Blog</a>
+                <a href="/contact/" class="btn btn-outline-gold">Enquire Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- controls (optional) -->
+   
+
+  </div>
+</section>
+<section class="lux-section">
+  <div class="container">
+
+    <div class="text-center mb-4">
+      <h2 class="lux-heading">Luxury <span>Packaging</span> Style</h2>
+      <p class="lux-text">
+        Premium black & gold finishing, elegant textures, and high-end presentation that elevates your product value.
+      </p>
+    </div>
+
+    <div class="lux-grid">
+      <div class="lux-item big-left">
+        <img class="zoomable-img" src="/static/images/WhatsApp Image 2026-02-19 at 1.41.48 PM (3).jpeg" alt="Luxury Packaging 1">
+      </div>
+
+      <div class="lux-item top-wide">
+        <img  class="zoomable-img" src="" alt="Luxury Packaging 2">
+      </div>
+
+      <div class="lux-item mid-1">
+        <img class="zoomable-img" src="/static/images/package.webp" alt="Luxury Packaging 3">
+      </div>
+
+      <div class="lux-item mid-2">
+        <img class="zoomable-img" src="/static/images/WhatsApp Image 2026-02-19 at 1.41.47 PM.jpeg" alt="Luxury Packaging 4">
+      </div>
+
+      <div class="lux-item bot-1">
+        <img class="zoomable-img" src="/static/images/FDS09980.JPG.jpg.jpeg" alt="Luxury Packaging 5">
+      </div>
+
+      <div class="lux-item bot-2">
+        <img class="zoomable-img" src="/static/images/WhatsApp Image 2026-02-19 at 1.41.48 PM.jpeg" alt="Luxury Packaging 6">
+      </div>
+
+      <div class="lux-item bot-3">
+        <img class="zoomable-img" src="heroimg1.jpeg" alt="Luxury Packaging 7">
+      </div>
+    </div>
+
+  </div>
+  <!-- ✅ Image Zoom Modal -->
+<div class="modal fade" id="imageZoomModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-xl">
+    <div class="modal-content zoom-modal">
+      
+      <!-- Close Button -->
+      <button type="button" class="zoom-close" data-bs-dismiss="modal" aria-label="Close">
+        ✕
+      </button>
+
+      <div class="modal-body p-0">
+        <img id="zoomedImage" src="" alt="Zoomed Image" class="zoom-img">
+      </div>
+
+    </div>
+  </div>
+</div>
+
+</section>
+
+<section class="whatwedo-section">
+  <div class="container">
+    <div class="whatwedo-card">
+      <div class="row align-items-center g-4">
+
+        <!-- LEFT IMAGE -->
+        <div class="col-12 col-lg-5">
+          <div class="whatwedo-img">
+            <img src="/static/images/WhatsApp Image 2026-02-19 at 1.42.02 PM (1).jpeg"
+                 alt="Packaging Design">
+          </div>
+        </div>
+
+        <!-- RIGHT CONTENT -->
+        <div class="col-12 col-lg-7">
+          <div class="whatwedo-content">
+            <div class="whatwedo-kicker">WHAT WE DO</div>
+
+            <h2 class="whatwedo-title">
+              Packaging <span>Design</span>
+            </h2>
+
+            <p class="whatwedo-text">
+              We craft premium packaging designs that feel luxurious, modern, and brand-focused.
+              From concept to print-ready layouts, we help your product stand out on shelves and online.
+            </p>
+
+            <p class="whatwedo-note">
+              Trusted by growing brands for elegant black & gold finishing.
+            </p>
+
+            <div class="d-flex flex-column flex-sm-row gap-3 mt-4">
+              <a href="/packaging/" class="btn btn-gold">Learn More</a>
+              <a href="/contact/" class="btn btn-outline-gold">Get a Quote</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<br>
+
+
+<section class="shop-collection">
+  <div class="container">
+
+    <h2 class="shop-title">Shop by collection</h2>
+
+    
+      <!-- Custom Nav -->
+       <div class="shop-navs">
+        <button class="shop-nav shop-prev" type="button" aria-label="Previous">‹</button>
+        <button class="shop-nav shop-next" type="button" aria-label="Next">›</button>
+      </div>
+
+      <!-- Slider -->
+      <div class="owl-carousel owl-theme" id="collectionCarousel">
+
+        <a href="/packaging/" class="collection-card">
+          <div class="collection-img">
+            <img src="/static/images/FDS09980.JPG.jpg.jpeg" alt="Gifting">
+          </div>
+          <div class="collection-name">Gifting</div>
+        </a>
+
+        <a href="/packaging/" class="collection-card">
+          <div class="collection-img">
+            <img src="/static/images/FDS09986.JPG.jpg.jpeg" alt="Food Packaging">
+          </div>
+          <div class="collection-name">Food Packaging</div>
+        </a>
+
+        <a href="/packaging/" class="collection-card">
+          <div class="collection-img">
+            <img src="/static/images/heroimg1.jpeg" alt="Jewellery Boxes">
+          </div>
+          <div class="collection-name">Jewellery Boxes</div>
+        </a>
+
+        <a href="/packaging/" class="collection-card">
+          <div class="collection-img">
+            <img src="/static/images/packaging2.webp" alt="All Products">
+          </div>
+          <div class="collection-name">All Products</div>
+        </a>
+
+      </div>
+    
+
+  </div>
+</section>
+<section class="contact-banner">
+  <div class="container">
+    <div class="contact-banner-card">
+      <div class="row align-items-center g-3">
+        <div class="col-12 col-lg-8">
+          <h2 class="contact-banner-title">
+            Ready to upgrade your <span>Packaging</span>?
+          </h2>
+          <p class="contact-banner-text">
+            Share your requirement and we’ll suggest the best premium packaging options with pricing, finishing, and delivery details.
+          </p>
+        </div>
+
+        <div class="col-12 col-lg-4">
+          <div class="d-flex gap-3 justify-content-lg-end contact-banner-actions flex-wrap">
+            <a href="/contact/" class="btn btn-gold">Contact Us</a>
+            <a href="tel:+971000000000" class="btn btn-outline-gold">Call Now</a>
+            <!-- or use WhatsApp -->
+            <!-- <a href="https://wa.me/971000000000" class="btn btn-outline-gold" target="_blank">WhatsApp</a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="faq-section">
+  <div class="container">
+    <div class="text-center mb-4">
+      <h2 class="faq-title">Frequently Asked <span>Questions</span></h2>
+      <p class="faq-subtitle">Quick answers about packaging, customization, MOQ, delivery and support.</p>
+    </div>
+
+    <div class="faq-wrap mx-auto">
+      <div class="accordion" id="faqAccordion">
+
+        <!-- Item 1 -->
+        <div class="accordion-item faq-item">
+          <h2 class="accordion-header" id="q1">
+            <button class="accordion-button collapsed faq-btn" type="button"
+              data-bs-toggle="collapse" data-bs-target="#a1" aria-expanded="false" aria-controls="a1">
+              Do you provide custom packaging design and printing?
+            </button>
+          </h2>
+          <div id="a1" class="accordion-collapse collapse" aria-labelledby="q1" data-bs-parent="#faqAccordion">
+            <div class="accordion-body faq-body">
+              Yes. We provide complete support from design to print-ready packaging, including size, material, finish and branding.
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="accordion-item faq-item">
+          <h2 class="accordion-header" id="q2">
+            <button class="accordion-button collapsed faq-btn" type="button"
+              data-bs-toggle="collapse" data-bs-target="#a2" aria-expanded="false" aria-controls="a2">
+              What is the minimum order quantity (MOQ)?
+            </button>
+          </h2>
+          <div id="a2" class="accordion-collapse collapse" aria-labelledby="q2" data-bs-parent="#faqAccordion">
+            <div class="accordion-body faq-body">
+              MOQ depends on the packaging type and material. Share your requirement and we’ll confirm the best MOQ and price.
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="accordion-item faq-item">
+          <h2 class="accordion-header" id="q3">
+            <button class="accordion-button collapsed faq-btn" type="button"
+              data-bs-toggle="collapse" data-bs-target="#a3" aria-expanded="false" aria-controls="a3">
+              Can I choose luxury finishes like gold foil and embossing?
+            </button>
+          </h2>
+          <div id="a3" class="accordion-collapse collapse" aria-labelledby="q3" data-bs-parent="#faqAccordion">
+            <div class="accordion-body faq-body">
+              Yes. We offer premium finishes like gold foil, emboss/deboss, spot UV, matte/gloss lamination and more.
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="accordion-item faq-item">
+          <h2 class="accordion-header" id="q4">
+            <button class="accordion-button collapsed faq-btn" type="button"
+              data-bs-toggle="collapse" data-bs-target="#a4" aria-expanded="false" aria-controls="a4">
+              How long does production and delivery take?
+            </button>
+          </h2>
+          <div id="a4" class="accordion-collapse collapse" aria-labelledby="q4" data-bs-parent="#faqAccordion">
+            <div class="accordion-body faq-body">
+              Timelines vary based on quantity and customization. Typically production takes a few days to weeks depending on complexity.
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 5 -->
+        <div class="accordion-item faq-item">
+          <h2 class="accordion-header" id="q5">
+            <button class="accordion-button collapsed faq-btn" type="button"
+              data-bs-toggle="collapse" data-bs-target="#a5" aria-expanded="false" aria-controls="a5">
+              How can I request a quotation?
+            </button>
+          </h2>
+          <div id="a5" class="accordion-collapse collapse" aria-labelledby="q5" data-bs-parent="#faqAccordion">
+            <div class="accordion-body faq-body">
+              Click “Get a Quote” or “Contact Us” and share product type, size, quantity and finishing requirements.
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+<section class="blog-section">
+  <div class="container">
+
+    <div class="blog-head text-center">
+      <h2 class="blog-title">Latest <span>Blogs</span></h2>
+      <p class="blog-subtitle">
+        Discover insights, trends and premium packaging ideas from our experts.
+      </p>
+    </div>
+
+    <div class="row g-4 mt-2">
+
+      <!-- Blog Card 1 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="blog-card">
+          <div class="blog-img">
+            <img src="https://images.unsplash.com/photo-1523292562811-8fa7962a78c8?q=80&w=1200&auto=format&fit=crop"
+                 alt="Blog 1">
+          </div>
+          <div class="blog-content">
+            <div class="blog-date">June 25, 2024</div>
+            <h5 class="blog-heading">
+              Luxury Packaging Trends for Premium Brands
+            </h5>
+            <p class="blog-text">
+              Discover how black & gold packaging enhances brand value and attracts premium customers.
+            </p>
+            <a href="/blog/" class="blog-read">Read More →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Blog Card 2 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="blog-card">
+          <div class="blog-img">
+            <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?q=80&w=1200&auto=format&fit=crop"
+                 alt="Blog 2">
+          </div>
+          <div class="blog-content">
+            <div class="blog-date">June 18, 2024</div>
+            <h5 class="blog-heading">
+              Why Custom Packaging Increases Sales
+            </h5>
+            <p class="blog-text">
+              Custom design creates a unique identity and improves product presentation.
+            </p>
+            <a href="/blog/" class="blog-read">Read More →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Blog Card 3 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="blog-card">
+          <div class="blog-img">
+            <img src="https://images.unsplash.com/photo-1520975958225-3f61d1b82a51?q=80&w=1200&auto=format&fit=crop"
+                 alt="Blog 3">
+          </div>
+          <div class="blog-content">
+            <div class="blog-date">June 10, 2024</div>
+            <h5 class="blog-heading">
+              Sustainable Packaging for Modern Businesses
+            </h5>
+            <p class="blog-text">
+              Learn how eco-friendly packaging options benefit your brand and environment.
+            </p>
+            <a href="/blog/" class="blog-read">Read More →</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<section class="contact-form-section">
+  <div class="container">
+    <div class="row g-4 align-items-stretch">
+
+      <!-- LEFT INFO -->
+      <div class="col-12 col-lg-5">
+        <div class="contact-info-box h-100">
+          <h2 class="contact-form-title">Let’s Talk <span>Packaging</span></h2>
+          <p class="contact-form-subtitle">
+            Share your requirement and our team will get back to you with pricing, finishing options, and delivery timelines.
+          </p>
+
+          <div class="contact-info-list mt-4">
+            <div class="info-item">
+              <div class="info-icon">📍</div>
+              <div>
+                <div class="info-label">Address</div>
+                <div class="info-text">Teejay Packaging LLC, Your Location</div>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon">📞</div>
+              <div>
+                <div class="info-label">Phone</div>
+                <a class="info-link" href="tel:+971000000000">+971 00 000 0000</a>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon">✉️</div>
+              <div>
+                <div class="info-label">Email</div>
+                <a class="info-link" href="mailto:info@teejaypackaging.com">info@teejaypackaging.com</a>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon">💬</div>
+              <div>
+                <div class="info-label">WhatsApp</div>
+                <a class="info-link" target="_blank" href="https://wa.me/971000000000">Chat on WhatsApp</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-mini-note mt-4">
+            We reply fast during business hours. For urgent orders, call us directly.
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT FORM -->
+      <div class="col-12 col-lg-7">
+        <div class="contact-form-card h-100">
+          <h4 class="form-heading">Send us a message</h4>
+
+          <form action="#" method="post" class="mt-3">
+            <div class="row g-3">
+              <div class="col-12 col-md-6">
+                <label class="form-label">Full Name</label>
+                <input type="text" class="form-control lux-input" placeholder="Enter your name" required>
+              </div>
+
+              <div class="col-12 col-md-6">
+                <label class="form-label">Phone</label>
+                <input type="text" class="form-control lux-input" placeholder="Enter phone number" required>
+              </div>
+
+              <div class="col-12">
+                <label class="form-label">Email</label>
+                <input type="email" class="form-control lux-input" placeholder="Enter your email" required>
+              </div>
+
+              <div class="col-12">
+                <label class="form-label">Packaging Type</label>
+                <select class="form-select lux-input" required>
+                  <option value="" selected disabled>Select packaging type</option>
+                  <option>Gifting</option>
+                  <option>Food Packaging</option>
+                  <option>Jewellery Boxes</option>
+                  <option>Custom Boxes</option>
+                </select>
+              </div>
+
+              <div class="col-12">
+                <label class="form-label">Message</label>
+                <textarea class="form-control lux-input" rows="5" placeholder="Tell us your requirement..." required></textarea>
+              </div>
+
+              <div class="col-12">
+                <button type="submit" class="btn btn-gold w-100">Submit Enquiry</button>
+              </div>
+            </div>
+          </form>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<footer class="site-footer">
+  <div class="container">
+
+    <div class="row g-4">
+
+      <!-- Logo / About -->
+      <div class="col-12 col-lg-4">
+        <div class="footer-brand">
+          <img src="/static/images/teejay-packaging-LLC.webp" class="footer-logo" alt="Teejay Packaging">
+          <p class="footer-text mt-3">
+            Luxury packaging solutions designed with premium black & gold finishing.
+            We help brands stand out with custom designs, quality materials, and timely delivery.
+          </p>
+
+          
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-6 col-lg-2">
+        <h6 class="footer-title">Quick Links</h6>
+        <ul class="footer-links">
+          <li><a href="/">Home</a></li>
+          <li><a href="/about/">About Us</a></li>
+          <li><a href="/packaging/">Packaging</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/contact/">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Services -->
+      <div class="col-6 col-lg-2">
+        <h6 class="footer-title">Collections</h6>
+        <ul class="footer-links">
+          <li><a href="/packaging/">Gifting</a></li>
+          <li><a href="/packaging/">Food Packaging</a></li>
+          <li><a href="/packaging/">Jewellery Boxes</a></li>
+          <li><a href="/packaging/">Custom Boxes</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="col-12 col-lg-4">
+        <h6 class="footer-title">Contact</h6>
+
+        <div class="footer-contact">
+          <div class="fc-item">
+            <span class="fc-label">Address:</span>
+            <span class="fc-value">Teejay Packaging LLC, Your Location</span>
+          </div>
+
+          <div class="fc-item">
+            <span class="fc-label">Phone:</span>
+            <a class="fc-link" href="tel:+971000000000">+971 00 000 0000</a>
+          </div>
+
+          <div class="fc-item">
+            <span class="fc-label">Email:</span>
+            <a class="fc-link" href="mailto:info@teejaypackaging.com">info@teejaypackaging.com</a>
+          </div>
+        </div>
+
+        <!-- Newsletter -->
+       
+      </div>
+
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="footer-bottom">
+      <div class="row g-2 align-items-center">
+        <div class="col-12 col-md-6">
+          <div class="footer-copy">© <span id="footerYear"></span> Teejay Packaging LLC. All rights reserved.</div>
+        </div>
+        <div class="col-12 col-md-6 text-md-end">
+          <a class="footer-small-link" href="#">Privacy Policy</a>
+          <span class="footer-dot">•</span>
+          <a class="footer-small-link" href="#">Terms & Conditions</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+<script>
+  document.getElementById("footerYear").textContent = new Date().getFullYear();
+</script>
+
+
+  <!-- ✅ Bootstrap JS (ONLY ONCE) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+  <!-- ✅ FIX: Close navbar on link click (MUST be AFTER bootstrap) -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const collapseEl = document.getElementById("mainNavbar");
+      const toggler = document.querySelector(".navbar-toggler");
+      if (!collapseEl || !toggler) return;
+
+      // Close when clicking any link inside the opened menu
+      collapseEl.addEventListener("click", function (e) {
+        const link = e.target.closest("a");
+        if (!link) return;
+
+        if (collapseEl.classList.contains("show")) {
+          const bsCollapse = bootstrap.Collapse.getOrCreateInstance(collapseEl);
+          bsCollapse.hide();
+        }
+      });
+
+      // Optional: close when clicking outside navbar (mobile)
+      document.addEventListener("click", function (e) {
+        const clickedInsideNavbar = e.target.closest(".navbar");
+        if (!clickedInsideNavbar && collapseEl.classList.contains("show")) {
+          const bsCollapse = bootstrap.Collapse.getOrCreateInstance(collapseEl);
+          bsCollapse.hide();
+        }
+      });
+    });
+  
+    
+  document.addEventListener("DOMContentLoaded", function () {
+    const modalEl = document.getElementById("imageZoomModal");
+    const zoomImg = document.getElementById("zoomedImage");
+    if (!modalEl || !zoomImg) return;
+
+    const bsModal = new bootstrap.Modal(modalEl);
+
+    document.querySelectorAll(".zoomable-img").forEach((img) => {
+      img.addEventListener("click", function () {
+        zoomImg.src = this.src;            // use same image
+        zoomImg.alt = this.alt || "Zoomed";
+        bsModal.show();
+      });
+    });
+
+    // Optional: clear src on close (prevents flicker next time)
+    modalEl.addEventListener("hidden.bs.modal", function () {
+      zoomImg.src = "";
+    });
+  });
+
+
+  
+  $(document).ready(function () {
+    const $c = $("#collectionCarousel");
+
+    $c.owlCarousel({
+      loop: true,
+      margin: 28,
+      nav: false,
+      dots: true,
+      autoplay: true,
+      autoplayTimeout: 3500,
+      autoplayHoverPause: true,
+      responsive: {
+        0: { items: 1 },
+        576: { items: 2 },
+        992: { items: 4 }
+      }
+    });
+
+    $(".shop-next").click(function () { $c.trigger("next.owl.carousel"); });
+    $(".shop-prev").click(function () { $c.trigger("prev.owl.carousel"); });
+  });
+
+
+</script>
+
+
+</body>
+</html>
