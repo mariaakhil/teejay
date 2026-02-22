@@ -1,0 +1,287 @@
+:root{
+    --nav-black:#000;
+    --gold:#d4af37; /* golden yellow */
+    --nav-white:#fff;
+    --gold-black:#d4b664;
+    --text-muted: rgba(255,255,255,.75);
+    --border-gold: rgba(212,175,55,.25);
+    --black:#000;
+    --gold-soft: rgba(212,175,55,.25);
+  }
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+}
+  /* Fixed navbar base */
+  .custom-navbar{
+    background: var(--gold-black);
+    border-bottom: 1px solid var(--gold-soft);
+    padding: 10px 0;
+    z-index: 9999;
+  }
+
+  /* Logo */
+  .brand-logo{
+    height: 42px;
+    width: auto;
+    object-fit: contain;
+  }
+
+  /* Brand text fallback (if no image) */
+  .brand-text{
+    font-weight: 700;
+    letter-spacing: .5px;
+    color: #000;
+    text-decoration: none;
+    font-size: 1.15rem;
+  }
+
+  /* Links */
+  .custom-navbar .nav-link{
+    color: rgba(14, 14, 13, 0.85);
+    font-weight: 600;
+    padding: 10px 14px;
+    border-radius: 10px;
+    transition: .2s ease;
+  }
+  .custom-navbar .nav-link:hover,
+  .custom-navbar .nav-link:focus{
+    color: var(--gold);
+    background: rgba(202, 191, 159, 0.973);
+  }
+
+  /* Active link */
+  .custom-navbar .nav-link.active{
+    color: var(--gold);
+    background: rgba(0, 0, 0, 0.12);
+  }
+
+  /* Toggler (hamburger) */
+  .custom-toggler{
+    border: 1px solid rgba(212,175,55,.45) !important;
+    padding: 6px 10px;
+    border-radius: 12px;
+  }
+  .custom-toggler:focus{
+    box-shadow: 0 0 0 3px rgba(212,175,55,.18) !important;
+  }
+
+ 
+
+
+
+  @media (max-width: 991px){
+    .custom-navbar .navbar-collapse{
+      margin-top: 10px;
+      padding: 10px;
+      border-radius: 14px;
+      background: rgba(255,255,255,.03);
+      border: 1px solid var(--gold-soft);
+    }
+    .custom-navbar .nav-link{
+      padding: 12px 12px;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .site-footer{
+  background: var(--nav-white);
+  padding: 70px 0 0;
+  border-top: 1px solid var(--gold-soft);
+}
+
+.footer-logo{
+  height: 50px;
+  width: auto;
+  object-fit: contain;
+}
+
+.footer-text{
+  color: rgba(14, 13, 13, 0.75);
+  font-size: .98rem;
+  line-height: 1.7;
+  max-width: 420px;
+}
+
+.footer-title{
+  color: #080808;
+  font-weight: 800;
+  margin-bottom: 14px;
+}
+
+.footer-links{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.footer-links li{ margin-bottom: 10px; }
+.footer-links a{
+  color: rgba(24, 23, 23, 0.75);
+  text-decoration: none;
+  transition: .2s ease;
+}
+.footer-links a:hover{
+  color: var(--gold);
+  padding-left: 3px;
+}
+
+.footer-contact .fc-item{
+  display: flex;
+  gap: 8px;
+  padding: 8px 0;
+  border-bottom: 1px dashed rgba(39, 30, 2, 0.2);
+}
+.footer-contact .fc-item:last-child{ border-bottom: none; }
+
+.fc-label{
+  color: rgba(5, 5, 5, 0.65);
+  font-weight: 700;
+  min-width: 70px;
+}
+.fc-value{
+  color: rgba(41, 40, 40, 0.82);
+}
+.fc-link{
+  color: var(--gold);
+  text-decoration: none;
+  font-weight: 700;
+}
+.fc-link:hover{ text-decoration: underline; }
+
+/* Social */
+.footer-social{
+  display: flex;
+  gap: 10px;
+}
+.footer-social a{
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  border: 1px solid rgba(212,175,55,.25);
+  background: rgba(255,255,255,.03);
+  color: var(--gold);
+  display: grid;
+  place-items: center;
+  text-decoration: none;
+  font-weight: 800;
+  transition: .2s ease;
+}
+.footer-social a:hover{
+  background: rgba(212,175,55,.12);
+  transform: translateY(-2px);
+}
+
+/* Newsletter */
+.footer-title-sm{
+  color: rgba(17, 16, 16, 0.85);
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+
+/* Bottom bar */
+.footer-bottom{
+  margin-top: 40px;
+  padding: 18px 0;
+  border-top: 1px solid rgba(32, 28, 12, 0.16);
+}
+.footer-copy{
+  color: rgba(19, 18, 18, 0.65);
+}
+.footer-small-link{
+  color: rgba(14, 13, 13, 0.65);
+  text-decoration: none;
+  margin-left: 10px;
+}
+.footer-small-link:hover{
+  color: var(--gold);
+}
+.footer-dot{
+  color: rgba(255,255,255,.35);
+  margin: 0 8px;
+}
+
+/* Responsive */
+@media (max-width: 768px){
+  .site-footer{ padding-top: 55px; }
+  .footer-social{ justify-content: flex-start; }
+}
+
+
+/* ✅ Footer Responsive Patch */
+@media (max-width: 992px){
+  .footer-logo{ height: 44px; }
+  .footer-text{ max-width: 100%; }
+}
+
+/* Mobile */
+@media (max-width: 768px){
+
+  .site-footer{
+    padding-top: 55px;
+    text-align: center;          /* ✅ center all text */
+  }
+
+  /* Center social icons */
+  .footer-social{
+    justify-content: center;
+    flex-wrap: wrap;             /* ✅ wrap if more icons */
+    gap: 10px;
+  }
+
+  /* Links list spacing */
+  .footer-links{
+    margin-bottom: 18px;
+  }
+  .footer-links li{
+    margin-bottom: 8px;
+  }
+
+  /* Contact items become stacked */
+  .footer-contact .fc-item{
+    flex-direction: column;      /* ✅ stack label + value */
+    align-items: center;
+    gap: 4px;
+  }
+
+  .fc-label{
+    min-width: auto;
+  }
+
+  /* Bottom bar align center */
+  .footer-bottom{
+    text-align: center;
+  }
+
+  .footer-small-link{
+    margin-left: 0;
+    margin-right: 10px;
+    display: inline-block;
+  }
+
+  .footer-dot{
+    color: rgba(0,0,0,.25);      /* ✅ on white bg */
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 420px){
+  .footer-social a{
+    width: 38px;
+    height: 38px;
+    border-radius: 11px;
+  }
+}
+
