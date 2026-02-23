@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ✅ Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Fonts - Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Owl -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+  <!-- ✅ FIXED Custom CSS path (relative) -->
+  <link rel="stylesheet" href="css/nav.css">
+   <link rel="stylesheet" href="css/contact.css">
+
+  <title>Teejay</title>
+</head>
+
+<body>
+
+  <!-- ✅ Fixed Navbar -->
+  <nav class="navbar navbar-expand-lg custom-navbar fixed-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+        <!-- ✅ FIXED image path (relative) -->
+        <img src="images/teejay-packaging-LLC.webp" alt="Logo" class="brand-logo">
+      </a>
+
+      <button class="navbar-toggler" type="button"
+        data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+        aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
+        <ul class="navbar-nav align-items-lg-center gap-lg-1">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="#packaging">Packaging</a></li>
+          <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+          <li class="nav-item"><a class="nav-link active" href="#contact"  style="color: black;">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+<!-- ================= CONTACT HERO ================= -->
+<section class="contact-hero" style="margin-top: 50px;">
+  <div class="container">
+    <div class="contact-hero-inner">
+      <div class="contact-kicker">GET IN TOUCH</div>
+      <h1 class="contact-title">Contact Us</h1>
+      <p class="contact-desc">
+        Have a question or need a custom packaging quote? Send us a message and we’ll get back to you quickly.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT CONTENT ================= -->
+<section class="contact-sec">
+  <div class="container">
+    <div class="row g-4">
+
+      <!-- LEFT: Info + Map -->
+      <div class="col-12 col-lg-5">
+
+        <div class="contact-card">
+          <div class="contact-card-title">Contact Details</div>
+
+          <a class="contact-item" href="tel:+919846771021">
+            <span class="c-ico"><i class="bi bi-telephone"></i></span>
+            <span>
+              <span class="c-label">Phone</span>
+              <span class="c-val">+91 98467 71021</span>
+            </span>
+          </a>
+
+          <a class="contact-item" href="mailto:info@example.com">
+            <span class="c-ico"><i class="bi bi-envelope"></i></span>
+            <span>
+              <span class="c-label">Email</span>
+              <span class="c-val">info@example.com</span>
+            </span>
+          </a>
+
+          <div class="contact-item">
+            <span class="c-ico"><i class="bi bi-geo-alt"></i></span>
+            <span>
+              <span class="c-label">Address</span>
+              <span class="c-val">Your Company Address, City, Country</span>
+            </span>
+          </div>
+
+          <div class="contact-item">
+            <span class="c-ico"><i class="bi bi-clock"></i></span>
+            <span>
+              <span class="c-label">Working Hours</span>
+              <span class="c-val">Mon - Sat: 9:00 AM – 6:00 PM</span>
+            </span>
+          </div>
+        </div>
+
+        <div class="map-card">
+          <div class="map-title">Find Us</div>
+          <div class="map-embed">
+            <iframe
+              src="https://www.google.com/maps?q=Thrissur%20Kerala&output=embed"
+              width="100%"
+              height="320"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT: Form -->
+      <div class="col-12 col-lg-7">
+        <div class="form-card">
+          <div class="form-head">
+            <div class="form-title">Send a Message</div>
+            <div class="form-sub">We usually reply within 24 hours.</div>
+          </div>
+
+          <form action="#" method="POST" class="row g-3">
+            <div class="col-12 col-md-6">
+              <label class="form-label contact-label">Full Name</label>
+              <input type="text" class="form-control contact-input" placeholder="Your name" required>
+            </div>
+
+            <div class="col-12 col-md-6">
+              <label class="form-label contact-label">Phone</label>
+              <input type="tel" class="form-control contact-input" placeholder="+91 XXXXX XXXXX" required>
+            </div>
+
+            <div class="col-12">
+              <label class="form-label contact-label">Email</label>
+              <input type="email" class="form-control contact-input" placeholder="you@example.com" required>
+            </div>
+
+            <div class="col-12">
+              <label class="form-label contact-label">Subject</label>
+              <input type="text" class="form-control contact-input" placeholder="Packaging quote / enquiry" required>
+            </div>
+
+            <div class="col-12">
+              <label class="form-label contact-label">Message</label>
+              <textarea rows="5" class="form-control contact-input" placeholder="Write your message..." required></textarea>
+            </div>
+
+            <div class="col-12">
+              <button type="submit" class="btn contact-btn w-100">
+                Send Message <i class="bi bi-arrow-right ms-1"></i>
+              </button>
+            </div>
+          </form>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- ✅ Footer -->
+  <footer class="site-footer">
+    <div class="container">
+
+      <div class="row g-4">
+
+        <div class="col-12 col-lg-4">
+          <div class="footer-brand">
+            <img src="images/teejay-packaging-LLC.webp" class="footer-logo" alt="Teejay Packaging">
+            <p class="footer-text mt-3">
+              Luxury packaging solutions designed with premium black & gold finishing.
+              We help brands stand out with custom designs, quality materials, and timely delivery.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-2">
+          <h6 class="footer-title">Quick Links</h6>
+          <ul class="footer-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#packaging">Packaging</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-lg-2">
+          <h6 class="footer-title">Collections</h6>
+          <ul class="footer-links">
+            <li><a href="#packaging">Gifting</a></li>
+            <li><a href="#packaging">Food Packaging</a></li>
+            <li><a href="#packaging">Jewellery Boxes</a></li>
+            <li><a href="#packaging">Custom Boxes</a></li>
+          </ul>
+        </div>
+
+        <div class="col-12 col-lg-4">
+          <h6 class="footer-title">Contact</h6>
+
+          <div class="footer-contact">
+            <div class="fc-item">
+              <span class="fc-label">Address:</span>
+              <span class="fc-value">Teejay Packaging LLC, Your Location</span>
+            </div>
+
+            <div class="fc-item">
+              <span class="fc-label">Phone:</span>
+              <a class="fc-link" href="tel:+971000000000">+971 00 000 0000</a>
+            </div>
+
+            <div class="fc-item">
+              <span class="fc-label">Email:</span>
+              <a class="fc-link" href="mailto:info@teejaypackaging.com">info@teejaypackaging.com</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <div class="row g-2 align-items-center">
+          <div class="col-12 col-md-6">
+            <div class="footer-copy">© <span id="footerYear"></span> Teejay Packaging LLC. All rights reserved.</div>
+          </div>
+          <div class="col-12 col-md-6 text-md-end">
+            <a class="footer-small-link" href="#">Privacy Policy</a>
+            <span class="footer-dot">•</span>
+            <a class="footer-small-link" href="#">Terms & Conditions</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("footerYear").textContent = new Date().getFullYear();
+  </script>
+
+  <!-- ✅ Scripts (correct order) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- ✅ Navbar close + Zoom + Carousel -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const collapseEl = document.getElementById("mainNavbar");
+      if (!collapseEl) return;
+
+      collapseEl.addEventListener("click", function (e) {
+        const link = e.target.closest("a");
+        if (!link) return;
+
+        if (collapseEl.classList.contains("show")) {
+          const bsCollapse = bootstrap.Collapse.getOrCreateInstance(collapseEl);
+          bsCollapse.hide();
+        }
+      });
+    })
+   
+
+    
+  </script>
+
+</body>
+</html>

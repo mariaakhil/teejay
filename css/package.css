@@ -366,3 +366,174 @@ body{
 @media (max-width: 575.98px){
   .industry-img{ height: 220px; }
 }
+
+
+
+
+
+
+
+/* ================= PREMIUM TRANSITIONS (ADD AT END) ================= */
+
+/* Smooth transitions everywhere */
+.pack-btn,
+.industry-btn,
+.industry-media,
+.industry-img,
+.industry-points li,
+.industries-card,
+.industries-list li{
+  transition: all .35s ease;
+}
+
+/* ---------- HERO BUTTON ---------- */
+.pack-btn{
+  transition: transform .25s ease, filter .25s ease, box-shadow .25s ease;
+}
+.pack-btn:hover{
+  transform: translateY(-2px);
+  filter: brightness(1.06);
+  box-shadow: 0 16px 32px rgba(212,175,55,.18);
+}
+
+/* ---------- INDUSTRY BUTTON ---------- */
+.industry-btn{
+  transition: transform .25s ease, background .25s ease, box-shadow .25s ease, filter .25s ease;
+}
+.industry-btn:hover{
+  transform: translateY(-2px);
+  filter: brightness(1.03);
+  box-shadow: 0 16px 34px rgba(212,175,55,.16);
+}
+
+/* ---------- IMAGE CARD HOVER ---------- */
+.industry-media{
+  transition: transform .35s ease, box-shadow .35s ease, border-color .35s ease;
+}
+.industry-media:hover{
+  transform: translateY(-4px);
+  border-color: rgba(212,175,55,.55);
+  box-shadow: 0 26px 60px rgba(0,0,0,.65);
+}
+
+/* Image zoom on hover */
+.industry-img{
+  transition: transform .55s ease, filter .45s ease;
+}
+.industry-media:hover .industry-img{
+  transform: scale(1.06);
+  filter: contrast(1.05) saturate(1.05);
+}
+
+/* ---------- LIST ITEM HOVER ---------- */
+.industry-points li{
+  transition: transform .25s ease, opacity .25s ease;
+}
+.industry-points li:hover{
+  transform: translateX(6px);
+}
+
+/* Bullet pulse on hover */
+.industry-points li::before{
+  transition: transform .25s ease, box-shadow .25s ease, background .25s ease;
+}
+.industry-points li:hover::before{
+  transform: scale(1.15);
+  box-shadow: 0 0 0 6px rgba(212,175,55,.18);
+}
+
+/* ---------- Industries main list (white section) ---------- */
+.industries-card{
+  transition: transform .35s ease, box-shadow .35s ease;
+}
+.industries-card:hover{
+  transform: translateY(-4px);
+  box-shadow: 0 22px 55px rgba(0,0,0,.12);
+}
+
+.industries-list li{
+  transition: transform .25s ease;
+}
+.industries-list li:hover{
+  transform: translateX(6px);
+}
+
+/* ---------- Accessibility: reduce motion ---------- */
+@media (prefers-reduced-motion: reduce){
+  .pack-btn,
+  .industry-btn,
+  .industry-media,
+  .industry-img,
+  .industry-points li,
+  .industries-card,
+  .industries-list li{
+    transition: none !important;
+  }
+  .industry-media:hover,
+  .industry-media:hover .industry-img,
+  .industry-points li:hover,
+  .industries-card:hover,
+  .industries-list li:hover,
+  .pack-btn:hover,
+  .industry-btn:hover{
+    transform: none !important;
+    filter: none !important;
+    box-shadow: none !important;
+  }
+}
+
+
+
+/* ================= FADE-IN ON SCROLL (Premium) ================= */
+
+/* initial hidden state */
+.reveal{
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity .7s ease, transform .7s ease;
+  will-change: opacity, transform;
+}
+
+/* visible */
+.reveal.is-visible{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* stagger children (title, text, list, button) */
+.reveal-stagger > *{
+  opacity: 0;
+  transform: translateY(14px);
+  transition: opacity .7s ease, transform .7s ease;
+}
+
+.reveal-stagger.is-visible > *{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* delays for a nice premium cascade */
+.reveal-stagger.is-visible > *:nth-child(1){ transition-delay: .05s; }
+.reveal-stagger.is-visible > *:nth-child(2){ transition-delay: .12s; }
+.reveal-stagger.is-visible > *:nth-child(3){ transition-delay: .18s; }
+.reveal-stagger.is-visible > *:nth-child(4){ transition-delay: .24s; }
+.reveal-stagger.is-visible > *:nth-child(5){ transition-delay: .30s; }
+.reveal-stagger.is-visible > *:nth-child(6){ transition-delay: .36s; }
+
+/* smooth reveal for image card */
+.industry-media.reveal{
+  transform: translateY(22px) scale(.98);
+}
+.industry-media.reveal.is-visible{
+  transform: translateY(0) scale(1);
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce){
+  .reveal,
+  .reveal-stagger > *{
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}

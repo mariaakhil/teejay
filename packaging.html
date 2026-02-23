@@ -44,9 +44,9 @@
 
       <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
         <ul class="navbar-nav align-items-lg-center gap-lg-1">
-          <li class="nav-item"><a class="nav-link active" href="#" style="color: black;">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
-          <li class="nav-item"><a class="nav-link" href="#packaging">Packaging</a></li>
+          <li class="nav-item"><a class="nav-link active" href="#packaging"  style="color: black;">Packaging</a></li>
           <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
           <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
         </ul>
@@ -135,7 +135,7 @@
 
       <!-- Content -->
       <div class="col-12 col-lg-6">
-        <div class="industry-content">
+        <div class="industry-content reveal-stagger">
           <div class="industry-kicker">INDUSTRY</div>
           <h3 class="industry-title">Premium Chocolate Packages</h3>
           <p class="industry-text">
@@ -154,7 +154,7 @@
 
       <!-- Image -->
       <div class="col-12 col-lg-6">
-        <div class="industry-media">
+        <div class="industry-media reveal">
           <img src="images/03.jpg" class="industry-img" alt="">
         </div>
       </div>
@@ -171,14 +171,14 @@
 
       <!-- Image -->
       <div class="col-12 col-lg-6 order-2 order-lg-1">
-        <div class="industry-media">
+        <div class="industry-media reveal">
           <img src="images/05.jpg" class="industry-img" alt="">
         </div>
       </div>
 
       <!-- Content -->
       <div class="col-12 col-lg-6 order-1 order-lg-2">
-        <div class="industry-content">
+        <div class="industry-content reveal-stagger">
           <div class="industry-kicker">INDUSTRY</div>
           <h3 class="industry-title">Dates & Gourmet Arabian Gifts</h3>
           <p class="industry-text">
@@ -205,7 +205,7 @@
     <div class="row align-items-center g-4">
 
       <div class="col-12 col-lg-6">
-        <div class="industry-content">
+        <div class="industry-content reveal-stagger">
           <div class="industry-kicker">INDUSTRY</div>
           <h3 class="industry-title">Confectionery & Specialty Sweets</h3>
           <p class="industry-text">
@@ -222,7 +222,7 @@
       </div>
 
       <div class="col-12 col-lg-6">
-        <div class="industry-media">
+        <div class="industry-media reveal">
           <img src="images/01.jpg" class="industry-img" alt="">
         </div>
       </div>
@@ -238,13 +238,13 @@
     <div class="row align-items-center g-4">
 
       <div class="col-12 col-lg-6 order-2 order-lg-1">
-        <div class="industry-media">
+        <div class="industry-media reveal">
           <img src="images/04.jpg" class="industry-img" alt="">
         </div>
       </div>
 
       <div class="col-12 col-lg-6 order-1 order-lg-2">
-        <div class="industry-content">
+        <div class="industry-content reveal-stagger">
           <div class="industry-kicker">INDUSTRY</div>
           <h3 class="industry-title">Perfumes & Fragrances</h3>
           <p class="industry-text">
@@ -271,7 +271,7 @@
     <div class="row align-items-center g-4">
 
       <div class="col-12 col-lg-6">
-        <div class="industry-content">
+        <div class="industry-content reveal-stagger">
           <div class="industry-kicker">INDUSTRY</div>
           <h3 class="industry-title">Cosmetics & Beauty Products</h3>
           <p class="industry-text">
@@ -288,7 +288,7 @@
       </div>
 
       <div class="col-12 col-lg-6">
-        <div class="industry-media">
+        <div class="industry-media reveal">
           <img src="images/11.jpg" class="industry-img" alt="">
         </div>
       </div>
@@ -304,13 +304,13 @@
     <div class="row align-items-center g-4">
 
       <div class="col-12 col-lg-6 order-2 order-lg-1">
-        <div class="industry-media">
+        <div class="industry-media reveal">
           <img src="images/06.jpg" class="industry-img" alt="">
         </div>
       </div>
 
       <div class="col-12 col-lg-6 order-1 order-lg-2">
-        <div class="industry-content">
+        <div class="industry-content reveal-stagger">
           <div class="industry-kicker">INDUSTRY</div>
           <h3 class="industry-title">Sushi & Premium Japanese Cuisine Packaging</h3>
           <p class="industry-text">
@@ -436,6 +436,27 @@
 
     
   </script>
+<script>
+  (function () {
+    const revealEls = document.querySelectorAll(".reveal, .reveal-stagger");
 
+    if (!("IntersectionObserver" in window)) {
+      // fallback: show all
+      revealEls.forEach(el => el.classList.add("is-visible"));
+      return;
+    }
+
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          io.unobserve(entry.target); // reveal once
+        }
+      });
+    }, { threshold: 0.12, rootMargin: "0px 0px -10% 0px" });
+
+    revealEls.forEach(el => io.observe(el));
+  })();
+</script>
 </body>
 </html>

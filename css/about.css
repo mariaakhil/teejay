@@ -369,7 +369,7 @@ body{
   position: absolute;
   inset: 0;
   width: 55%;
-  background: linear-gradient(135deg, #f4b400 0%, #e0b700 55%, #686606 100%);
+  background: linear-gradient(135deg, #5f4603 0%, #dfc659 55%, #fcf979 100%);
   clip-path: polygon(0 0, 100% 0, 68% 100%, 0% 100%);
 }
 
